@@ -4,7 +4,10 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.ListView
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.ArrayList
 
@@ -22,7 +25,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
 //        Android Adapter
 //        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, movies)
 //        listview.adapter = adapter
@@ -36,13 +38,14 @@ class MainActivity : AppCompatActivity() {
 //                                              logcat
         val adapter=MoviesAdapter(list,this)
         listview.adapter=adapter
-        val context=this
-        listview.setOnItemClickListener{ parent, view, position, id ->
-            val selectedMovie=movies[position]
-//            val detail=DetailMovies.newIntent(context,selectedMovie)
 
-        val detail=Intent(this,DetailMovies::class.java)
+        listview.setOnItemClickListener{ parent, view, position, id ->
+//            val selectedMovie=parent.getItemAtPosition(position) as String
+            val detail=Intent(this,DetailMovies::class.java)
+            detail.putExtra("extraData",position)
             startActivity(detail)
+//            detail.putExtra(position.toString(),position)
+
         }
     }
     }
