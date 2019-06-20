@@ -20,14 +20,13 @@ class MainActivity : AppCompatActivity() {
         bt1.setOnClickListener {
             stop=0
 
-
                 uiScope.launch {
                     for (j in sec..59) {
                         for (i in msec..99) {
                             if(stop==1) {
                                 break
                             }
-                            delay(10)
+                            delay(8.toLong())
                             if(i<10)
                                 tv3.text="0"+"$i"
                             else
@@ -56,7 +55,7 @@ class MainActivity : AppCompatActivity() {
             tv2.text="00."
             tv3.text="00"
             msec=0
-            sec=1
+            sec=0
         }
     }
 }
