@@ -10,6 +10,7 @@
               android:layout_marginTop="30dp"
               android:id="@+id/tv"
               android:text="Following are "/>
-    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content"
-    android:id="@+id/img"/>
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/img"
+    />
 </LinearLayout>
