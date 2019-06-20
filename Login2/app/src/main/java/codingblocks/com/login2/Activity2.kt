@@ -16,7 +16,7 @@ class Activity2 : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_2)
         val name= PreferenceManager.getDefaultSharedPreferences(this).getString("Name","")
 
-        tv.text=tv.text.toString()+name
+        tv.text="Welcome! "+name
         action.setOnClickListener(this)
         comedy.setOnClickListener(this)
         horror.setOnClickListener(this)

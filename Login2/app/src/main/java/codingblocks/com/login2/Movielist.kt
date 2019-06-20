@@ -17,15 +17,51 @@ class Movielist : AppCompatActivity() {
         val pos= intent.getStringExtra("key")
 
         when(pos){
-            "action"->tv.text=tv.text.toString()+pos+" movies:"
-            "comedy"->tv.text=tv.text.toString()+pos+" movies:"
-            "horror"->tv.text=tv.text.toString()+pos+" movies:"
-            "historical"->tv.text=tv.text.toString()+pos+" movies:"
-            "adventure"->tv.text=tv.text.toString()+pos+" movies:"
-            "drama"->tv.text=tv.text.toString()+pos+" movies:"
-            "biopic"->tv.text=tv.text.toString()+pos+" movies:"
-            "mystery"->tv.text=tv.text.toString()+pos+" movies:"
-            "Science Fiction"->tv.text=tv.text.toString()+pos+" movies:"
+            "action"-> {
+                tv.text = tv.text.toString() + pos + " movies:"
+                var id = R.drawable.action
+                img.setImageResource(id)
+            }
+            "comedy"-> {
+                tv.text = tv.text.toString() + pos + " movies:"
+                var id = R.drawable.comedy
+                img.setImageResource(id)
+            }
+            "horror"-> {
+                tv.text = tv.text.toString() + pos + " movies:"
+                var id = R.drawable.horror
+                img.setImageResource(id)
+            }
+            "historical"-> {
+                tv.text = tv.text.toString() + pos + " movies:"
+                var id = R.drawable.history
+                img.setImageResource(id)
+            }
+            "adventure"-> {
+                tv.text = tv.text.toString() + pos + " movies:"
+                var id = R.drawable.adventure
+                img.setImageResource(id)
+            }
+            "drama"->{
+                tv.text=tv.text.toString()+pos+" movies:"
+                var id = R.drawable.drama
+                img.setImageResource(id)
+            }
+            "biopic"->{
+                tv.text=tv.text.toString()+pos+" movies:"
+                var id = R.drawable.biopic
+                img.setImageResource(id)
+            }
+            "mystery"->{
+                tv.text=tv.text.toString()+pos+" movies:"
+                var id = R.drawable.mystery
+                img.setImageResource(id)
+            }
+            "Science Fiction"->{
+                tv.text=tv.text.toString()+pos+" movies:"
+                var id = R.drawable.science
+                img.setImageResource(id)
+            }
         }
 
 
