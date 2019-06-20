@@ -3,6 +3,7 @@ package codingblocks.com.login2
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.provider.Settings.Global.putString
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +14,9 @@ class Activity2 : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_2)
+        val name= PreferenceManager.getDefaultSharedPreferences(this).getString("Name","")
+
+        tv.text=tv.text.toString()+name
         action.setOnClickListener(this)
         comedy.setOnClickListener(this)
         horror.setOnClickListener(this)

@@ -7,11 +7,9 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity"
         android:orientation="vertical">
-    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
 
-        <LinearLayout
-                android:layout_width="match_parent" android:layout_height="match_parent"
-                android:orientation="vertical">
+
+
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
                       android:text="Movie Selector"
                       android:textSize="40sp"
@@ -36,18 +34,23 @@
                     android:layout_height="wrap_content"
                     android:hint="Enter Password: "/>
 
-            <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:id="@+id/btsignup"
-                    android:layout_marginLeft="20dp"
-                    android:text="Sign Up"/>
-            <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+            <Button android:layout_width="match_parent" android:layout_height="wrap_content"
                     android:textSize="20sp"
                     android:id="@+id/btsignin"
                     android:layout_marginLeft="20dp"
-                    android:text="Sign In(If you already have an account)"/>
+                    android:text="Sign In"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:text="Don't have an account yet?"
+    android:textSize="20sp"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/btsignup"
+            android:layout_marginLeft="20dp"
+            android:text="Sign Up"/>
+    </LinearLayout>
         </LinearLayout>
-    </ScrollView>
-</LinearLayout>
