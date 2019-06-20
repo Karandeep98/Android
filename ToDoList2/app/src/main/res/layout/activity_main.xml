@@ -11,13 +11,17 @@
             android:id="@+id/et"
             android:textSize="20sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    <!--<Spinner-->
-    <!--android:id="@+id/spinner"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content">-->
+            android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"/>
+    <Spinner
+    android:id="@+id/spinner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-    <!--</Spinner>-->
+    </Spinner>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/tv"
+    android:textSize="0sp"/>
 
     <Button
             android:text="Add to list"
