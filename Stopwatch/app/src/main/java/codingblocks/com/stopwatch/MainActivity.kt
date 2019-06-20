@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                     if(stop==1) {
                         break
                     }
-                    if(j<10)
+                    if(j<9)
                         tv2.text = "0"+(j.toString().toInt()+1).toString()+"."
                     else
                         tv2.text = (j.toString().toInt()+1).toString()+"."
