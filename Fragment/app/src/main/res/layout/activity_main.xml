@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+android:orientation="vertical">
+
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+android:orientation="horizontal">
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="Go to DC"
+            android:layout_weight="1"
+    android:id="@+id/dcbutton"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Go to Marvel"
+            android:layout_weight="1"
+    android:id="@+id/marvelbutton"/>
+</LinearLayout>
+
+
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+android:weightSum="2"
+    android:layout_marginTop="40dp">
+<!--<fragment android:layout_width="match_parent" android:layout_height="match_parent"-->
+<!--android:name="codingblocks.com.fragment.MarvelFragment"-->
+<!--android:id="@+id/marvelflag"-->
+<!--android:layout_weight="1"/>-->
+        <!--The below frame layout is used to implement dynamic fragment-->
+    <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <!--<fragment android:layout_width="match_parent" android:layout_height="match_parent"-->
+              <!--android:name="codingblocks.com.fragment.DcFragment"-->
+              <!--android:id="@+id/dcflag"-->
+    <!--android:layout_weight="1"/>-->
+</LinearLayout>
+
+    <!--<include layout="@layout/content_main"/>-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
