@@ -15,10 +15,7 @@ import kotlinx.android.synthetic.main.fragment_dc.view.*
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- *
- */
+
 class DcFragment : Fragment() {
 
     override fun onCreateView(

@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             "2016", "2017")
     var list: ArrayList<Movie> = arrayListOf()
     override fun onCreate(savedInstanceState: Bundle?) {
+        
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //        Android Adapter

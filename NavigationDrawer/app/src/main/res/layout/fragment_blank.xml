@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".BlankFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+            android:layout_marginTop="250dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="hello_blank_fragment"
+    android:id="@+id/tv"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/bt"
+    android:layout_marginTop="50dp"/>
+
+
+</FrameLayout>

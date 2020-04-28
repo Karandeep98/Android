@@ -34,7 +34,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         //        to open dialpad
         if(v?.id==R.id.bt1) {
-            val k = Intent(Intent.ACTION_DIAL, Uri.parse("tel:${et.text.toString()}"))
+//            val k = Intent(Intent.ACTION_DIAL, Uri.parse("tel:${et.text.toString()}"))
+            val k = Intent(Intent.ACTION_DIAL, Uri.parse("123456789"))
             startActivity(k)
         }
         // to open a webpage

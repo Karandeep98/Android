@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "413882094913",
+    "firebase_url": "https://karandeepfirebase.firebaseio.com",
+    "project_id": "karandeepfirebase",
+    "storage_bucket": "karandeepfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413882094913:android:c28e5ee4855b2e61",
+        "android_client_info": {
+          "package_name": "codingblocks.com.firebaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413882094913-0l8oqq5p5uhok3ku41nmqqefo9i1qh9g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "codingblocks.com.firebaseapp",
+            "certificate_hash": "f1b06c92e0a5e2002307f5672e4dfc3adad110e9"
+          }
+        },
+        {
+          "client_id": "413882094913-cb9knqq64pmf5h2c9o1dhk2v3gmtfu3c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1pRPTZw7S4okwSR2B0UsSR1BcbNvDFZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413882094913-cb9knqq64pmf5h2c9o1dhk2v3gmtfu3c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

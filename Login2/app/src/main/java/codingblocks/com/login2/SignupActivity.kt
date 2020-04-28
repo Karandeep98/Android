@@ -33,6 +33,7 @@ val prefs=PreferenceManager.getDefaultSharedPreferences(this)
                 putString("Username", username.text.toString())
                 putString("Password", password.text.toString())
                 putString("Name",name.text.toString())
+
             }
                 val l = Intent(this, Activity2::class.java)
                 startActivity(l)
