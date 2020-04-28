@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!--<item-->
+            <!--android:id="@+id/nav_order"-->
+            <!--android:title="Order Now"-->
+            <!--android:icon="@drawable/ic_add_shopping_cart_black_24dp"-->
+            <!--/>-->
+        <item
+            android:id="@+id/nav_rewards"
+            android:title="Rewards"
+           />
+        <item
+            android:id="@+id/nav_chat"
+            android:title="Seat Belt"
+            />
+        <item
+                android:id="@+id/nav_emergency"
+                android:title="Emergency SMS"
+                />
+        <item
+                android:id="@+id/emergencyCall"
+                android:title="Emergency Call"
+                />
+        <!--<item-->
+            <!--android:id="@+id/nav_guide"-->
+            <!--android:title="Guide"-->
+            <!--android:icon="@drawable/ic_help_black_24dp"/>-->
+
+    </group>
+
+
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share Location"
+               />
+            <item
+                android:id="@+id/nav_contact"
+
+                android:title="Contact Us"
+                />
+
+            <item
+                android:id="@+id/nav_about"
+                android:title="Ask Assistant"
+
+                />
+
+</menu>
